@@ -5,7 +5,13 @@ number of terms = 5
 Expected output:
 24690"""
 n=int(input())
-for i in range(1,n+1):
-    print('*'*i)
-for i in range(n-1,0,-1):
-     print('*'*i)
+num = 0
+output = 0
+series = []  
+
+for _ in range(n):
+    num = num * 10 + 2
+    series.append(str(num)) 
+    output += num
+
+print(" + ".join(series), "=", output)
