@@ -9,4 +9,9 @@ Expected output:
 0 1 2 3 4
 0 2 4 6 8
 """
-
+x=int(input())
+y=int(input())
+for i in range(x):
+    for j in range (y):
+      print(i*j, end=' ')
+    print()
